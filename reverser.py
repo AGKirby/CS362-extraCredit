@@ -6,7 +6,7 @@ def reverse(sentence):
     period = False
     if(words[len(words)-1][-1] == "."): #if last word ends with a period
         period = True
-        last = list(words[len(words)-1]) #get last word of string
+        last = list(words[len(words)-1]) #get last word of the sentence
         last[-1] = "" #remove period
         words[len(words)-1] = "".join(last) #replace last word with modified version
     
@@ -26,5 +26,3 @@ def reverse(sentence):
 
     # Return reversed string
     return reversed
-
-print(reverse("My name is V Tadimeti."))
